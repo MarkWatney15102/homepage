@@ -14,7 +14,7 @@ export default async function checkPermission (permission) {
         userToken: token
     };
 
-    await axios.post("http://192.168.178.36:43921/user/permission", ajaxData).then((response) => {
+    await axios.post("http://localhost:43921/user/permission", ajaxData).then((response) => {
         access = response.data.access;
     });
 

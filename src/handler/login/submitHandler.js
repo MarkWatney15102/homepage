@@ -8,7 +8,7 @@ export default function LoginFromSubmitHandler() {
         username: $('#username').val(),
         password: $('#password').val()
     };
-    axios.post("http://192.168.178.36:43921/auth/login", data).then((response) => {
+    axios.post("http://localhost:43921/auth/login", data).then((response) => {
         if (response.data.auth) {
             const cookies = new Cookies();
             cookies.set('UID', response.data.uid, { path: '/' });

@@ -7,7 +7,7 @@ function Techs () {
 
     useEffect(
         () => {
-            axios.get('http://192.168.178.36:43921/api/techs').then((response) => {
+            axios.get('http://localhost:43921/api/techs').then((response) => {
                 setTechs(response.data.data);
                 setLoaded(true);
             });

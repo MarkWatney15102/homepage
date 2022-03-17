@@ -10,7 +10,7 @@ function Projects () {
 
     useEffect(
         () => {
-            axios.get('http://192.168.178.36:43921/github/repos').then((response) => {
+            axios.get('http://localhost:43921/github/repos').then((response) => {
                 setData(response.data.repos);
                 setLoaded(true);
             });
