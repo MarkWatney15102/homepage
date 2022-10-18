@@ -1,34 +1,21 @@
+import  { AppProps } from 'next/app';
+
+import 'bootstrap/dist/css/bootstrap.css';
+import Footer from "../components/footer";
+import Banner from "../components/home/banner";
+import Head from "next/head";
+
 import '../styles/globals.css'
 
-import Head from 'next/head'
-import Link from 'next/link'
-
-import Navbar from '../views/basics/NavBar';
-import Footer from '../views/basics/Footer';
-import Banner from '../views/banner/Banner';
-
-import '@popperjs/core';
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
-
-function MyApp({ Component, pageProps }) {
+function Homepage({ Component, pageProps }) {
   return <>
-      <Head>
-        <title>Eike Wientjes</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <div class="content">
-        <div class="content-wrap">
-          <Navbar />
-          <Banner />
-          <Component {...pageProps} />
-        </div>
-        <br />
-        <br />
-        <Footer />
-    </div>
-  </>;
+    <Head>
+        <title>Eike Eric Wientjes</title>
+    </Head>
+    <Banner />
+    <Component {...pageProps} />
+    <Footer />
+  </>
 }
 
-export default MyApp
+export default Homepage

@@ -1,12 +1,12 @@
-import Intruduction from '../views/home/Introduction';
-import NextGoals from '../views/home/NextGoals';
-import Projects from '../views/projects/Projects';
+import {NextPage} from 'next';
 
-export default function Home() {
-  return <>
-    <Intruduction />
-    <br />
-    <NextGoals />
-    <br />
-  </>;
+import Content from "../components/home/content";
+
+function Home () {
+    return <>
+        <br/>
+        <Content />
+    </>;
 }
+
+export default Home

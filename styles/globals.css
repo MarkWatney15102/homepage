@@ -1,9 +1,12 @@
+@import url("./footer.css");
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #161B22;
 }
 
 a {
@@ -15,23 +18,22 @@ a {
   box-sizing: border-box;
 }
 
-/* Main */
-@import url("./main.css");
+.backgroundColorStandard {
+  color: aliceblue;
+  background-color: #7431FA;
+}
 
-/* Background */
-@import url("./background.css");
+.card {
+  border-radius: 0 !important;
+  border: none;
+}
 
-/* Banner */
-@import url("./banner.css");
+.card-header {
+  background-color: #7431FA;
+  color: aliceblue;
+  border-radius: 0 !important;
+}
 
-/* Footer */
-@import url("./footer.css");
-
-/* Form */
-@import url("./form.css");
-
-/* Sonstiges */
-@import url("./other.css");
-
-/* Notification */
-@import url("./notification.css");
+.card-title {
+  text-align: center;
+}

@@ -1,0 +1,11 @@
+.footerLink {
+  text-decoration: none;
+  color: aliceblue;
+  margin: 12px;
+  display: inline-block;
+  transition: .1s ease-in color;
+}
+
+.footerLink:hover {
+  color: lightgrey;
+}
