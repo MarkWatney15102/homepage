@@ -30,7 +30,7 @@ function Content() {
                                 Diese Ausbildung habe ich im Juli 2022 erfolgreich abgeschlossen.
                             </p>
                             <p className="lead">
-                                Ich bin seite ich 10 Jahre alt bin, bei der Freiwilligen Feuerwehr. Zuerst in der Jungendabteilung und seit 2019 auch in der Einsatzabteilung.
+                                Ich bin seit ich 10 Jahre alt bin, bei der Freiwilligen Feuerwehr. Zuerst in der Jungendabteilung und seit 2019 auch in der Einsatzabteilung.
                                 <br/>
                                 <br/>
                                 Folgende Lehrgänge habe ich absolviert:
