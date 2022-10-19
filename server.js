@@ -1,17 +1,23 @@
 // server.js
-const { createServer } = require('http')
+const https = require('https')
 const { parse } = require('url')
 const next = require('next')
+const fs = require('fs');
 
-const dev = process.env.NODE_ENV !== 'production'
+const dev = false
 const hostname = 'eike-wientjes.de'
-const port = 8080
+const port = 443
 // when using middleware `hostname` and `port` must be provided below
 const app = next({ dev, hostname, port })
 const handle = app.getRequestHandler()
 
+var options = {
+    key: fs.readFileSync('ssl/key.pem'),
+    cert: fs.readFileSync('ssl/cert.pem'),
+};
+
 app.prepare().then(() => {
-    createServer(async (req, res) => {
+    https.createServer(options,async (req, res) => {
         try {
             // Be sure to pass `true` as the second argument to `url.parse`.
             // This tells it to parse the query portion of the URL.
