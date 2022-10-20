@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start-server": "node server.js"
+    "start-server": "node server.js",
+    "deploy": "next build && node server.js"
   },
   "dependencies": {
     "next": "10.0.4",

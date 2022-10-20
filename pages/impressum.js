@@ -3,7 +3,7 @@ function Impressum() {
         <br/>
         <div className={"container-fluid"}>
             <div className={"row justify-content-center"}>
-                <div className={"col-12 col-md-6 offset-md-3"}>
+                <div className={"col-12 col-md-5"}>
                     <div className={"card"}>
                         <div className={"card-header"}>
                             <h3 className={"card-title"}>Impressum</h3>
