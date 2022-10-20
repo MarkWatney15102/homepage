@@ -1,5 +1,3 @@
-import { NextPage } from 'next'
-
 function Navbar () {
     return <>
         <nav className="navbar navbar-expand-lg bg-light">

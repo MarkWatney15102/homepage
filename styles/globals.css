@@ -28,6 +28,7 @@ a {
 .card {
   border-radius: 0 !important;
   border: none;
+  margin-bottom: 15px;
 }
 
 .card-header {

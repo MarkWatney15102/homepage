@@ -19,3 +19,7 @@
 .noDeco:hover {
   color: lightgrey;
 }
+
+.center {
+  text-align: center;
+}

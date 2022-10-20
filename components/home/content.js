@@ -1,5 +1,3 @@
-import {NextPage} from 'next'
-
 import styles from '../../styles/Content.module.css'
 
 function Content() {
@@ -17,7 +15,7 @@ function Content() {
     return (
         <div className={"container-fluid"}>
             <div className={"row justify-content-center"}>
-                <div className={"col-5"}>
+                <div className={"col-12 col-md-5"}>
                     <div className={"card"}>
                         <div className={"card-header"}>
                             <h3 className={"card-title"}>Über mich</h3>
@@ -44,7 +42,7 @@ function Content() {
                         </div>
                     </div>
                 </div>
-                <div className={"col-3"}>
+                <div className={"col-12 col-md-3"}>
                     <div className={"card"}>
                         <div className={"card-header"}>
                             <h3 className={"card-title"}>Meine Ziele</h3>
