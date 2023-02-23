@@ -11,10 +11,10 @@ const port = 80;
 const app = next({ dev, hostname, port });
 const handle = app.getRequestHandler();
 
-var options = {
-    key: fs.readFileSync('ssl/key.pem'),
-    cert: fs.readFileSync('ssl/cert.pem'),
-};
+// var options = {
+//     key: fs.readFileSync('ssl/key.pem'),
+//     cert: fs.readFileSync('ssl/cert.pem'),
+// };
 
 app.prepare().then(() => {
     http.createServer(async (req, res) => {
