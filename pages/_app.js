@@ -1,20 +1,24 @@
-import  { AppProps } from 'next/app';
-
 import 'bootstrap/dist/css/bootstrap.css';
 import Footer from "../components/footer";
 import Banner from "../components/home/banner";
 import Head from "next/head";
 
-import '../styles/globals.css'
+import '../styles/globals.css';
 
-function Homepage({ Component, pageProps }) {
+import {useEffect} from "react";
+
+function Homepage({Component, pageProps}) {
+  useEffect(() => {
+    require("bootstrap/dist/js/bootstrap.bundle.min.js");
+  }, []);
+
   return <>
     <Head>
-        <title>Eike Eric Wientjes</title>
+      <title>Eike Eric Wientjes</title>
     </Head>
-    <Banner />
+    <Banner/>
     <Component {...pageProps} />
-    <Footer />
+    <Footer/>
   </>
 }
 
