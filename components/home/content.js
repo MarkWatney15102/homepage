@@ -30,8 +30,8 @@ function Content(posts) {
               <p className="lead">
                 Ich bin Ausgebildeter Fachinformatiker für Anwendungsentwicklung. Diese Ausbildung habe
                 ich 2019 begonnen und anfang Juli 2022 erfolgreich abgeschlossen.
-                Aktuell bin ich im Bereich der Webentwicklung tätig und arbeite mit der
-                Programmiersprache PHP.
+                Seit Oktober 2022 bin ich bei einem Unternehmen tätig, bei welchem ich für die Weiterentwicklung einer
+                Lager- und Proktionsverwaltungssoftware zuständig bin.
               </p>
 
               <h5>Ehrenamt</h5>
@@ -49,10 +49,9 @@ function Content(posts) {
             </div>
             <div className={"card-body"}>
               <ul className={styles.list}>
-                <li>Umgang mit Docker lernen</li>
                 <li>Webseite erweitern</li>
-                <li>Projekte weiterführen</li>
-                <li>Einarbeiten in Bun</li>
+                <li>Fotografie Skills verbessern</li>
+                <li>Einarbeiten in neue PHP und JS Frameworks</li>
               </ul>
             </div>
           </div>
