@@ -13,6 +13,28 @@ function Content(posts) {
     return age;
   }
 
+  const postElements = posts.props;
+
+  let htmlPhoto = "";
+  if (postElements !== undefined) {
+    htmlPhoto = <>
+      <div className={"row justify-content-center"}>
+        <div className={"col-12 col-md-8"}>
+          <div className={"card"}>
+            <div className={"card-header"}>
+              <h3 className={"card-title"}>Fotografie</h3>
+            </div>
+            <div className={"card-body"}>
+              <div className={"row rect-img-container"}>
+                {postElements?.map(element => Image(element))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>;
+  }
+
   return (
     <div className={"container-fluid"}>
       <div className={"row justify-content-center"}>
@@ -57,20 +79,7 @@ function Content(posts) {
           </div>
         </div>
       </div>
-      <div className={"row justify-content-center"}>
-        <div className={"col-12 col-md-8"}>
-          <div className={"card"}>
-            <div className={"card-header"}>
-              <h3 className={"card-title"}>Fotografie</h3>
-            </div>
-            <div className={"card-body"}>
-              <div className={"row rect-img-container"}>
-                {posts.props.map(element => Image(element))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {htmlPhoto}
     </div>
   );
 }

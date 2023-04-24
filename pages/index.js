@@ -15,6 +15,14 @@ export async function getServerSideProps() {
 
   const json = await res.json();
 
+  if (json.code === 190) {
+    return {
+      props: {
+        data: []
+      }
+    }
+  }
+
   return {
     props: {
       data: json
