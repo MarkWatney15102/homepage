@@ -45,21 +45,21 @@ function Content(posts) {
             </div>
             <div className={"card-body"}>
               <p className="lead">Moin, ich bin <b>Eike Eric
-                Wientjes</b>, {calculateAge('01-15-2002')} Jahre alt und bin gelernter Fachinformatiker
-                für Anwedungsentwicklung</p>
+                Wientjes</b>, 21 Jahre alt und bin gelernter Fachinformatiker
+                für Anwedungsentwicklung.</p>
 
               <h5>Mein Werdegang</h5>
               <p className="lead">
                 Ich bin Ausgebildeter Fachinformatiker für Anwendungsentwicklung. Diese Ausbildung habe
-                ich 2019 begonnen und anfang Juli 2022 erfolgreich abgeschlossen.
+                ich 2019 begonnen und Anfang Juli 2022 erfolgreich abgeschlossen.
                 Seit Oktober 2022 bin ich bei einem Unternehmen tätig, bei welchem ich für die Weiterentwicklung einer
-                Lager- und Proktionsverwaltungssoftware zuständig bin.
+                Lager- und Produktionsverwaltungssoftware zuständig bin.
               </p>
 
               <h5>Ehrenamt</h5>
               <p className="lead">
                 Ich bin im Alter von 10 Jahren der Jugendfeuerwehr in Loga beigetreten. Mittlerweile bin
-                ich auch schon fast 4 Jahre in der Einsatzabteilg tätig.
+                ich auch schon fast 4 Jahre in der Einsatzabteilung tätig.
               </p>
             </div>
           </div>
