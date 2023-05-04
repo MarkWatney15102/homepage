@@ -1,6 +1,6 @@
 function Navbar() {
   return <>
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary my-3 my-md-0 mx-0">
       <div className="container-fluid">
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -13,15 +13,15 @@ function Navbar() {
               <a className="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/projects">Projekte</a>
+              <a className="nav-link" href="/projects/">Projekte</a>
             </li>
           </ul>
-          <ul className="navbar-nav d-flex" role="search">
+          <ul className="navbar-nav d-flex p-0">
             <li className={"nav-item"}>
-              <a className="nav-link float-end" href="/impressum">Impressum</a>
+              <a className="nav-link float-md-end" href="/impressum">Impressum</a>
             </li>
             <li className={"nav-item"}>
-              <a className="nav-link float-end" href="/datenschutz">Datenschutz</a>
+              <a className="nav-link float-md-end" href="/datenschutz">Datenschutz</a>
             </li>
           </ul>
         </div>

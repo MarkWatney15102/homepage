@@ -1,6 +1,6 @@
-import ProjectTableRow from "../components/projects/table";
+import ProjectTableRow from "../../components/projects/table";
 
-function Projects({projects}) {
+function Index({projects}) {
   return <>
     <br/>
     <div className={"container-fluid"}>
@@ -34,7 +34,7 @@ function Projects({projects}) {
 }
 
 export async function getServerSideProps() {
-  const url = "http://127.0.0.1:4000/api/ew/project/fetch/";
+  const url = "http://127.0.0.1:4000/api/ew/projects/fetch/";
   const res = await fetch(url);
 
   const json = await res.json();
@@ -46,4 +46,4 @@ export async function getServerSideProps() {
   }
 }
 
-export default Projects
+export default Index
