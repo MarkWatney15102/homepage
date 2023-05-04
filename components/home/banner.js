@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Navbar from "../navbar";
 
 import styles from '../../styles/Banner.module.css'
 
@@ -6,6 +7,11 @@ function Banner() {
   return <>
     <div className="container-fluid backgroundColorStandard">
       <div className="container">
+        <div className={"row"}>
+          <div className="col-12">
+            <Navbar />
+          </div>
+        </div>
         <div className="row">
           <div className={"col-12 col-md-3 " + styles.center}>
             <Link href="/" className={styles.noDeco}><img src="/me.jpg" className={styles.profilePic} alt="Me"/></Link>

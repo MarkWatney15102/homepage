@@ -18,7 +18,7 @@ function Homepage({Component, pageProps}) {
     </Head>
     <Banner/>
     <Component {...pageProps} />
-    <Footer/>
+    <br/>
   </>
 }
 
