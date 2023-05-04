@@ -27,7 +27,7 @@ function Banner() {
                 &nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;@author <Link href="https://github.com/MarkWatney15102"><a
                 className={styles.noDeco}>MarkWatney15102</a></Link>
                 <br/>
-                &nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;@version <b>1.0.0</b>
+                &nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;@version <b>1.1.0</b>
                 <br/>
                 &nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;@description Software Entwickler
                 <br/>

@@ -6,9 +6,9 @@ function Image(imageData) {
 
   if (mediaType === 'CAROUSEL_ALBUM' || mediaType === 'IMAGE') {
     return (
-      <div className={"col-lg-4 col-sm-12"}>
+      <div className={"col-lg-4 col-sm-12"} key={imageData.id ?? 0}>
         <div className={"image-container"}>
-          <a href={link} target={"_blank"}>
+          <a href={link} target={"_blank"} key={imageUrl}>
             <img src={imageUrl} alt="" className={"image"}/>
           </a>
           <span className={"image-caption"}>{caption}</span>
