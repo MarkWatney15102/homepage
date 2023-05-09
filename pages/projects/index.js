@@ -34,7 +34,7 @@ function Index({projects}) {
 }
 
 export async function getServerSideProps() {
-  const url = "http://127.0.0.1:4000/api/ew/projects/fetch/";
+  const url = "http://localhost:4000/api/ew/projects/fetch/";
   const res = await fetch(url);
 
   const json = await res.json();

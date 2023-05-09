@@ -34,7 +34,7 @@ function Project({project}) {
 export async function getServerSideProps(context) {
   const projectId = context.params.id;
 
-  const url = "http://127.0.0.1:4000/api/ew/project/fetch/" + projectId;
+  const url = "http://localhost:4000/api/ew/project/fetch/" + projectId;
   const res = await fetch(url);
 
   const json = await res.json();
