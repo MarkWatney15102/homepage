@@ -1,5 +1,4 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import Footer from "../components/footer";
 import Banner from "../components/home/banner";
 import Head from "next/head";
 
