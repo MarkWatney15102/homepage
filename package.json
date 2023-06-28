@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "start": "next start",
     "start-server": "node server.js",
     "deploy": "next build && node server.js"
   },
