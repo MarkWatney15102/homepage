@@ -6,6 +6,8 @@ services:
     container_name: nextjs
     ports:
       - "3000:3000"
+    environment:
+      INSTAGRAM_ACCESS_TOKEN: ${INSTAGRAM_ACCESS_TOKEN:?err}
   nginx:
     build:
       dockerfile: nginx.Dockerfile
