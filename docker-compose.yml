@@ -1,0 +1,19 @@
+version: "3"
+services:
+  nextjs:
+    build:
+      dockerfile: nextjs.Dockerfile
+    container_name: nextjs
+    ports:
+      - "3000:3000"
+    restart: always
+  nginx:
+    build:
+      dockerfile: nginx.Dockerfile
+    container_name: nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /etc/letsencrypt/live/eike-eric-wientjes.de/:/etc/nginx/ssl:ro
+    restart: always

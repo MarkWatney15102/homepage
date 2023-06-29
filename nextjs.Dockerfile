@@ -15,5 +15,5 @@ COPY --from=BUILD_IMAGE /var/www/homepage/.next ./.next
 COPY --from=BUILD_IMAGE /var/www/homepage/public ./public
 COPY --from=BUILD_IMAGE /var/www/homepage/node_modules ./node_modules
 ENV NODE_ENV=production
-EXPOSE 443
+EXPOSE 3000
 CMD ["npm", "start"]
