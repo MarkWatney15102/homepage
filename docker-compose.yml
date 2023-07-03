@@ -8,13 +8,3 @@ services:
       - "3000:3000"
     environment:
       INSTAGRAM_ACCESS_TOKEN: ${INSTAGRAM_ACCESS_TOKEN:?err}
-  nginx:
-    build:
-      dockerfile: nginx.Dockerfile
-    container_name: nginx
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - /etc/letsencrypt/:/etc/letsencrypt/
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf
