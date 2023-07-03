@@ -12,9 +12,6 @@ function Navbar() {
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="/">Home</a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/projects/">Projekte</a>
-            </li>
           </ul>
           <ul className="navbar-nav d-flex p-0">
             <li className={"nav-item"}>
