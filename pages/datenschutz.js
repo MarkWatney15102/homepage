@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function Datenschutz() {
   return <>
     <br/>
@@ -98,7 +100,7 @@ function Datenschutz() {
               </p>
 
               <small>
-                Quelle: Datenschutz-Konfigurator von <a href="https://mein-datenschutzbeauftragter.de">https://mein-datenschutzbeauftragter.de</a>
+                Quelle: Datenschutz-Konfigurator von <Link href="https://mein-datenschutzbeauftragter.de">https://mein-datenschutzbeauftragter.de</Link>
               </small>
             </div>
           </div>

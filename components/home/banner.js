@@ -17,15 +17,13 @@ function Banner() {
             <Link href="/" className={styles.noDeco}><img src="/me.jpg" className={styles.profilePic} alt="Me"/></Link>
           </div>
           <div className="col-12 col-md-9">
-            <h1 className="display-4">Moin, ich bin <Link href="/"><a className={styles.noDeco}>Eike Eric
-              Wientjes</a></Link>.</h1>
+            <h1 className="display-4">Moin, ich bin <Link href="/" className={styles.noDeco}>Eike Eric Wientjes</Link>.</h1>
             <br/>
             <h6 className="lead desc">
               <i>
                 /**
                 <br/>
-                &nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;@author <Link href="https://github.com/MarkWatney15102"><a
-                className={styles.noDeco}>MarkWatney15102</a></Link>
+                &nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;@author <Link href="https://github.com/MarkWatney15102" className={styles.noDeco}>MarkWatney15102</Link>
                 <br/>
                 &nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;@version <b>1.1.0</b>
                 <br/>

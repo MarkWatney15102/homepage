@@ -1,40 +1,6 @@
 import styles from '../../styles/Content.module.css'
-import Image from "./image";
 
-function Content(posts) {
-  function calculateAge(dateString) {
-    let today = new Date();
-    let birthDate = new Date(dateString);
-    let age = today.getFullYear() - birthDate.getFullYear();
-    let m = today.getMonth() - birthDate.getMonth();
-    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-      age--;
-    }
-    return age;
-  }
-
-  const postElements = posts.props;
-
-  let htmlPhoto = "";
-  if (postElements !== undefined) {
-    htmlPhoto = <>
-      <div className={"row justify-content-center"}>
-        <div className={"col-12 col-md-8"}>
-          <div className={"card"}>
-            <div className={"card-header"}>
-              <h3 className={"card-title"}>Fotografie</h3>
-            </div>
-            <div className={"card-body"}>
-              <div className={"row rect-img-container"}>
-                {postElements?.map(element => Image(element))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>;
-  }
-
+function Content() {
   return (
     <div className={"container-fluid"}>
       <div className={"row justify-content-center"}>
@@ -79,7 +45,6 @@ function Content(posts) {
           </div>
         </div>
       </div>
-      {htmlPhoto}
     </div>
   );
 }

@@ -4,7 +4,7 @@ import Link from "next/link";
 function Footer () {
     return <>
         <div className={"footer"}>
-            <Link href="/impressum"><a className={styles.footerLink}>Impressum</a></Link>
+            <Link href="/impressum" className={styles.footerLink}>Impressum</Link>
         </div>
     </>;
 }
