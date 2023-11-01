@@ -3,8 +3,8 @@ import styles from '../../styles/Content.module.css'
 function Content() {
   return (
     <div className={"container-fluid"}>
-      <div className={"row justify-content-center"}>
-        <div className={"col-12 col-md-5"}>
+      <div className={"row"}>
+        <div className={"col-12 col-md-6 offset-md-3"}>
           <div className={"card"}>
             <div className={"card-header"}>
               <h3 className={"card-title"}>Ein Informatiker stellt sich vor</h3>
@@ -30,16 +30,38 @@ function Content() {
             </div>
           </div>
         </div>
-        <div className={"col-12 col-md-3"}>
-          <div className={"card"}>
-            <div className={"card-header"}>
-              <h3 className={"card-title"}>Meine Ziele</h3>
+        <div className='col-12 col-md-6 offset-md-3'>
+          <div className='card'>
+            <div className='card-header'>
+              <h3 className='card-title'>Mein Leben</h3>
             </div>
-            <div className={"card-body"}>
+            <div className='card-body'>
+              <h3>Pläne für 2024</h3>
               <ul className={styles.list}>
-                <li>Webseite erweitern</li>
-                <li>Fotografie Skills verbessern</li>
-                <li>Einarbeiten in neue PHP und JS Frameworks</li>
+                <li>Webseite um neue Features erweitern</li>
+                <li>Weitere Projekte voranbringen</li>
+              </ul>
+              <h3>2023</h3>
+              <ul className={styles.list}>
+                <li><b>Oktober</b>: Fullstack Developer bei Landguth</li>
+              </ul>
+              <h3>2022</h3>
+              <ul className={styles.list}>
+                <li><b>Juli</b>: Job wechsel nach der Ausbildung zur Landguth Heimtiernahrung GmbH als PHP-Entwickler</li>
+                <li><b>Juli</b>: Ausbildung zum Fachinformatiker für Anwedungsentwicklung abgeschlossen</li>
+              </ul>
+              <h3>2021</h3>
+              <ul className={styles.list}>
+                <li><b>September</b>: Atemschutzlehrgang erfolgreich absolviert</li>
+              </ul>
+              <h3>2019</h3>
+              <ul className={styles.list}>
+                <li><b>August</b>: Ausbildung begonnen</li>
+              </ul>
+              <h3>2018</h3>
+              <ul className={styles.list}>
+                <li><b>August</b>: Jahrespraktikum im Bereich Informatiker begonnen</li>
+                <li><b>Juli</b>: Realschule erfolgreich absolviert</li>
               </ul>
             </div>
           </div>

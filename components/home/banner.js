@@ -23,7 +23,7 @@ function Banner() {
               <i>
                 /**
                 <br/>
-                &nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;@author <Link href="https://github.com/MarkWatney15102" className={styles.noDeco}>MarkWatney15102</Link>
+                &nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;@author <Link href="https://github.com/MarkWatney15102" className={styles.noDeco}>Eike Eric Wientjes</Link>
                 <br/>
                 &nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;@version <b>1.1.0</b>
                 <br/>
